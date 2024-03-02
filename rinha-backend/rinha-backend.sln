@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rinha-backend", "rinha-backend.csproj", "{8B7212ED-2C3B-447C-B2E4-0E9C8345F872}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rinha-backend", "rinha-backend.csproj", "{8B7212ED-2C3B-447C-B2E4-0E9C8345F872}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Domain\Domain.csproj", "{388A34C6-9F83-45EE-AB26-3098B5121168}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "..\Infra\Infra.csproj", "{18383340-BEB3-4E31-BF9A-75242DD593E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AA47D8E-A1C6-4204-A0FA-B69F521112F5}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Application", "01 - Application", "{F6F0072D-37F7-49F2-87C1-A82C899D0136}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Domain", "02 - Domain", "{C7E20ABE-1F2B-4AF8-A81E-3AE40905FC2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Infra", "03 - Infra", "{DA0BF592-0C5C-4BF2-802C-89F68D573886}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +31,25 @@ Global
 		{8B7212ED-2C3B-447C-B2E4-0E9C8345F872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7212ED-2C3B-447C-B2E4-0E9C8345F872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B7212ED-2C3B-447C-B2E4-0E9C8345F872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388A34C6-9F83-45EE-AB26-3098B5121168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388A34C6-9F83-45EE-AB26-3098B5121168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388A34C6-9F83-45EE-AB26-3098B5121168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388A34C6-9F83-45EE-AB26-3098B5121168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18383340-BEB3-4E31-BF9A-75242DD593E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18383340-BEB3-4E31-BF9A-75242DD593E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18383340-BEB3-4E31-BF9A-75242DD593E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18383340-BEB3-4E31-BF9A-75242DD593E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B7212ED-2C3B-447C-B2E4-0E9C8345F872} = {F6F0072D-37F7-49F2-87C1-A82C899D0136}
+		{388A34C6-9F83-45EE-AB26-3098B5121168} = {C7E20ABE-1F2B-4AF8-A81E-3AE40905FC2A}
+		{18383340-BEB3-4E31-BF9A-75242DD593E8} = {DA0BF592-0C5C-4BF2-802C-89F68D573886}
+		{F6F0072D-37F7-49F2-87C1-A82C899D0136} = {0AA47D8E-A1C6-4204-A0FA-B69F521112F5}
+		{C7E20ABE-1F2B-4AF8-A81E-3AE40905FC2A} = {0AA47D8E-A1C6-4204-A0FA-B69F521112F5}
+		{DA0BF592-0C5C-4BF2-802C-89F68D573886} = {0AA47D8E-A1C6-4204-A0FA-B69F521112F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {726E9768-4575-4CA7-A046-7942EDF146A9}
